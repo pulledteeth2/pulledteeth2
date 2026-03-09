@@ -139,7 +139,31 @@ body {
 
 /* ----------------------------------------------------------------- */
 
+/* front page */
+
+.front-nav ul {
+    width: 450px;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.artist-info {
+    text-align: initial;
+}
+
+.artist-info a {
+    text-decoration: none;
+    color: red;
+}
+
+.indent {
+    text-indent: 50px;
+}
+
 /* ----------------------------------------------------------------- */
+
+
 
 /* resizing */
 
