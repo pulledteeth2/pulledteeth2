@@ -14,6 +14,7 @@ body {
     color: #fff;
     margin: 0;
     text-align: center;
+    scrollbar-color: white;
 }
 
 .pge-wrapper-home {
