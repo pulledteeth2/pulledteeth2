@@ -1,0 +1,127 @@
+body {
+    font: 350 20px/1.5 "Crimson Text", serif;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* navatrols font pairing */
+
+.navatrols {
+    font: 350 20px/1.5 "Outfit", sans-serif;
+    background-color: var(--navatrols_gray);
+    color: #000;
+}
+
+.navatrols p {
+    font-family: "Didact Gothic", sans-serif;
+}
+
+/* hensodyne font pairing */
+
+.hensodyne {
+    font: 350 20px/1.5 serif;
+    background-color: var(--hensodyne_white);
+    color: var(--hensodyne_red);
+}
+
+.hensodyne p {
+    font-family: "Roboto Serif", serif;
+    color: var(--hensodyne_blue);
+}
+
+/* ----------------------------------------------------------------- */
+
+
+/* this is all header stufff */
+
+.nav h2 {
+    margin: 0;
+    position: fixed;
+    padding: 30px;
+}
+
+.nav h2:last-child {
+    right: 0;
+}
+
+.entries-pge header {
+    display: flex;
+    flex: row;
+}
+
+.entries-pge a {
+    text-decoration: none;
+    transition-property: background-color, color;
+    transition: 0.5s ease-in-out;
+    padding: 0 5px;
+}
+
+.entries-pge a:link, .entries-pge a:visited {
+    color: #fff;
+}
+
+.entries-pge a:hover, .entries-pge a:active {
+    background-color: #fff;
+    color: #000;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* entry titles */
+
+.entries-content {
+    display: flex;
+    justify-content: center;
+}
+
+.entries-content h2 {
+    position: absolute;
+    top: 15%;
+    margin: 0;
+    font-size: 50px;
+}
+
+.entries-content h3 {
+    position: absolute;
+    bottom: 0;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* entry pages */
+
+.entry-info {
+    position: absolute;
+    top: 40%;   
+    width: 500px;
+    display: flex;
+    line-height: 35px;
+    
+    flex-direction: column;
+    border: 2px solid #fff;
+    padding: 15px;
+    
+    overflow-y: scroll;
+    max-height: 300px;
+}
+
+.entry-info a {
+    padding: 0 5px;
+    border: 0.5px solid #fff;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------- */
+
+/* resizing */
+
+@media (max-width: 575.98px) {
+    .entry-info {
+        width: 85%;
+    }
+    .entries-content h3 {
+        margin: 0px;
+        bottom: 0%;
+    }
+}

@@ -1,0 +1,150 @@
+:root {
+    --navatrols_gray: #5f5f64;
+    --navatrols_blue: #01045a;
+    --hensodyne_gold: #805e08;
+    --hensodyne_blue: #235789;
+    --hensodyne_red: #c1292e;
+    --hensodyne_white: #fffaf2;
+}
+
+
+body {
+    background-color: #000;
+    font: 350 20px/1.5 "Crimson Text", serif;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+
+.pge-wrapper-home {
+    background-color: #000;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pge-wrapper-home nav {
+    display: flex;
+    justify-content: center;
+}
+
+.pge-wrapper-home h3 {
+    position: absolute;
+    bottom: 5%;
+    margin: 0;
+}
+/* ----------------------------------------------------------------- */
+
+
+/* this is all header stufff */
+
+.pge-wrapper-home ul {
+    list-style: none;
+    position: absolute;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    /* left: 40%; */
+    display: flex;
+    width: 250px;
+    justify-content: space-around;
+}
+
+.pge-wrapper-home a {
+    text-decoration: none;
+    transition-property: background-color, color;
+    transition: 0.5s ease-in-out;
+    padding: 0 5px;
+}
+
+.pge-wrapper-home a:link, .pge-wrapper-home a:visited {
+    color: #fff;
+}
+
+.pge-wrapper-home a:hover, .pge-wrapper-home a:active {
+    background-color: #fff;
+    color:#000;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* about page */
+
+.about-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about-nav h2 {
+    margin: 0;
+    padding: 30px;
+}
+
+.about-pge header {
+    display: flex;
+    flex: row;
+}
+
+.about-pge a {
+    text-decoration: none;
+    transition-property: background-color, color;
+    transition: 0.5s ease-in-out;
+}
+
+.about-pge a:link, .about-pge a:visited {
+    color: #fff;
+}
+
+.about-pge a:hover, .about-pge a:active {
+    background-color: #fff;
+    color: #000;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+}
+
+.about-content h2 {
+    position: absolute;
+    top: 15%;
+    margin: 0;
+    font-size: 50px;
+}
+
+.about-info {
+    position: absolute;
+    top: 40%;   
+    width: 500px;
+    display: flex;
+    
+    flex-direction: column;
+    border: 2px solid #fff;
+    padding: 15px;
+    
+    overflow-y: scroll;
+    max-height: 300px;
+}
+
+.about-info a {
+    font-weight: 900;
+    padding: 0 2px;
+    border: 0.5px solid #fff;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------- */
+
+/* resizing */
+
+@media (max-width: 575.98px) {
+    .about-info {
+        width: 85%;
+    }
+}

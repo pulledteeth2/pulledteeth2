@@ -1,0 +1,63 @@
+/* hensodyne pages */
+
+.hen-blue {
+    color: var(--hensodyne_blue);
+}
+
+.hen-red {
+    color: var(--hensodyne_red);
+}
+
+.hen-gold {
+    color: var(--hensodyne_gold);
+}
+
+.hen-white {
+    color: var(--hensodyne_white);
+}
+
+.hensodyne a:link, .hensodyne a:visited {
+    color: var(--hensodyne_blue);
+}
+
+.hensodyne a:hover, .hensodyne a:active {
+    background-color: var(--hensodyne_gold);
+    color: var(--hensodyne_white);
+}
+
+.hensodyne-about {
+    position: absolute;
+    top: 40%;   
+    width: 500px;
+    display: flex;
+    line-height: 35px;
+    
+    flex-direction: column;
+    border: 2px solid var(--hensodyne_gold);
+    padding: 15px;
+    
+    overflow-y: scroll;
+    scrollbar-color: var(--hensodyne_red);
+    max-height: 300px;
+}
+
+.hensodyne-about a {
+    padding: 0 2px;
+    border: 2px solid var(--hensodyne_red);
+}
+
+.hensodyne-about ul li {
+    list-style: none;
+    text-align: left;
+}
+/* ----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------- */
+
+/* resizing */
+
+@media (max-width: 757.98px) {
+    .hensodyne-about {
+        width: 85%;
+    }
+}

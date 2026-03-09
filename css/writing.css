@@ -1,0 +1,169 @@
+body {
+    background-color: #fff;
+    color: #000;
+    font: 350 20px/1.5 "Crimson Text", serif;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* header stullf */
+
+.pge-writing-home header {
+    display: flex;
+    flex: row;
+}
+
+.pge-writing-home a {
+    text-decoration: none;
+    transition-property: background-color, color;
+    transition: 0.5s ease-in-out;
+    padding: 0 5px;
+}
+
+.pge-writing-home a:link, .pge-writing-home a:visited {
+    color: #000;
+}
+
+.pge-writing-home a:hover, .pge-writing-home a:active {
+    background-color: #000;
+    color: #fff;
+}
+
+.nav h2 {
+    margin: 0;
+    position: fixed;
+    padding: 30px;
+    
+}
+
+.nav h2:last-child {
+    right: 0;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* timeline type shi */
+
+.writing-content {
+    display: flex;
+    justify-content: center;
+}
+
+.writing-content h2 {
+    position: absolute;
+    top: 15%;
+    margin: 0;
+    font-size: 50px;
+}
+
+input {
+    display: none;
+}
+
+input:checked ~ label {
+    border: 2px solid #000;
+}
+
+input:checked ~ a {
+    display: block;
+}
+
+.timeline label {
+    padding: 0 5px;
+}
+
+.timeline label:hover {
+    cursor: pointer;
+    transition-property: background-color, color;
+    transition: 0.5s ease-in-out;
+    background-color: #000;
+    color: #fff;
+}
+
+
+.timeline {
+    display: flex;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    justify-content: center;
+}
+
+.timeline ul {
+    display: flex;
+    flex: 1 0 250px;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0;
+    padding: 10px;
+    width: 95%;
+}
+
+.timeline li {
+    display: flex;
+    justify-content: center;
+}
+
+.timeline a {
+    border: 2px solid #000;
+    margin: 0;
+    padding: 0 2px;
+    position: absolute;
+    bottom: -300%;
+    display: none;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* more */
+.more-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.more-nav h2 {
+    margin: 0;
+    padding: 30px;
+}
+
+.pge-more-home header {
+    display: flex;
+    flex: row;
+}
+
+.pge-more-home a {
+    text-decoration: none;
+    transition-property: background-color, color;
+    transition: 0.5s ease-in-out;
+}
+
+.pge-more-home a:link, .pge-more-home a:visited {
+    color: #000;
+}
+
+.pge-more-home a:hover, .pge-more-home a:active {
+    color: #fff;
+    background-color: #000;
+}
+/* ----------------------------------------------------------------- */
+
+/* resizing */
+
+@media (max-width: 575.98px) {
+    .timeline {
+        width: 90%;
+        justify-self: center;
+        overflow-x: scroll;
+        height: 70%;
+        left: 5%;
+    }
+
+    .timeline label {
+        height: fit-content;
+    }
+
+    .timeline a {
+        bottom: 100px;
+    }
+}

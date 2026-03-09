@@ -1,0 +1,229 @@
+body {
+    font: 350 20px/1.5 "Crimson Text", serif;
+}
+
+/* page content */
+
+.info-content {
+    display: flex;
+    justify-content: center;
+}
+
+.info-content h2 {
+    position: absolute;
+    top: 15%;
+    margin: 0;
+    font-size: 50px;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* this is the choosing stuff */
+
+.select {
+    display: flex;
+    position: absolute;
+    top: 220px;
+    height: 65px;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.select ul {
+    display: flex;
+    position: absolute;
+    margin: 0;
+    padding-left: 0;
+    width: 750px;
+    height: 45px;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #fff;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    padding: 0 5px;
+}
+
+.select label:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+input:checked ~ label {
+    border: 2px solid #fff;
+}
+
+
+/* ----------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------- */
+
+/* this is the filter scroll */
+
+/* .tags {
+    display: flex;
+    position: absolute;
+    width: 500px;
+    justify-content: center;
+    border: 2px solid #fff;
+}
+
+.tags ul {
+    list-style: none;
+    padding: 5px 0px;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+} */
+
+/* ----------------------------------------------------------------- */
+
+/* this is where the entries live */
+
+.entries {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    left: 0;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow-y: scroll;
+    top: 75px;
+}
+
+.entries h4 {
+    margin: 0;
+    width: 100px;
+    padding: 50px 75px;
+    
+}
+
+.entries a {
+    border: 2px solid #fff;
+    display: none;
+}
+
+.entries .aliysies-entries {
+    position: absolute;
+    display: flex;
+    /* left: -1%; */
+    z-index: 5;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navatrols-entries {
+    z-index: 5;
+}
+/* .entries .navatrols {
+    background-color: var(--navatrols_gray);
+    border: 2px solid var(--navatrols_blue);
+}
+
+.entries .navatrols h4 {
+    color: var(--navatrols_blue);
+}
+
+.entries .hensodyne {
+    background-color: var(--hensodyne_white);
+    border: 2px solid var(--hensodyne_gold);
+}
+
+.entries .hensodyne h4 {
+    color: var(--hensodyne_red);
+} */
+
+
+
+/* sjowing the entries */
+
+input#aliysies:checked ~ .entries .aliysies {
+    display: block;
+}
+
+input#navatrols:checked ~ .entries .navatrols {
+    display: block;
+}
+
+input#hensodyne:checked ~ .entries .hensodyne {
+    display: block;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* this is all header stufff */
+
+.nav h2 {
+    margin: 0;
+    position: fixed;
+    padding: 30px;
+}
+
+.nav h2:last-child {
+    right: 0;
+}
+
+.pge-info-home header {
+    display: flex;
+    flex: row;
+}
+
+.pge-info-home a {
+    text-decoration: none;
+    transition-property: background-color, color;
+    transition: 0.5s ease-in-out;
+    padding: 0 5px;
+}
+
+.pge-info-home a:link, .pge-info-home a:visited {
+    color: #fff;
+}
+
+.pge-info-home a:hover, .pge-info-home a:active {
+    background-color: #fff;
+    color: #000;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------- */
+/* resizing */
+
+@media (max-width: 575.98px) {
+    .entries {
+        justify-content: center;
+    }
+
+    .tags {
+        width: 85%;
+    }
+}
+
+@media (min-width: 576px) {
+    .entries {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .entries {
+        justify-content: space-around;
+    }
+}
