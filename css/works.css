@@ -1,7 +1,7 @@
 body {
     background-color: #fff;
     color: #000;
-    font: 350 20px/1.5 "Crimson Text", serif;
+    font: 350 20px/1.5 "Times New Roman", serif;
 }
 
 /* ----------------------------------------------------------------- */
@@ -124,6 +124,89 @@ body {
 
 .work .divide {
     text-align: center;
+}
+
+/* fiog specific */
+.work .zay-text {
+    display: flex;
+    flex-direction: column;
+    right: 5px;
+    text-align: right;
+    line-height: initial;
+    justify-content: end;
+    font-family: Helvetica, sans-serif;
+}
+.work .zay-text div {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.work .zay-text div h5, .zay-text div h6 {
+    margin: 0 1px;
+    color: #8a8a90;
+    font-size: 15px;
+}
+.work .zay-text div h6 {
+    font-size: x-small;
+    height: fit-content;
+    font-size: 12px;
+}
+.work .zay-text p {
+    line-height: initial;
+    text-align: right;
+    text-indent: 0;
+    display: block;
+    width: fit-content;
+    background-color: #0f6acb;
+    color: #fff;
+    font-size: 15px;
+    margin: 1px 0;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.work .rom-text {
+    display: flex;
+    flex-direction: column;
+    line-height: initial;
+    font-family: Helvetica, sans-serif;
+}
+
+.work .rom-text div {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.work .rom-text div h5, .rom-text div h6{
+    margin: 0 1px;
+    color: #8a8a90;
+    font-size: 15px;
+}
+.work .rom-text div h6 {
+    font-size: x-small;
+    height: fit-content;
+    font-size: 12px;
+}
+
+.work .rom-text p {
+    line-height: initial;
+    text-indent: 0;
+    display: block;
+    width: fit-content;
+    background-color: #e9e9ea;
+    color: #000;
+    font-size: 15px;
+    margin: 1px 0;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+hr {
+    width: 100%;
+    display: block;
+    color: #000;
+    /* margin-top: 70px; */
 }
 
 /* ----------------------------------------------------------------- */
